@@ -30,6 +30,9 @@ public class WeatherData implements Subject {
 		notifyObservers();
 	}
 	
+	// This is a method that simulates the actual change in measurements, 
+	// it's not a part of the design pattern - just a way for us to 
+	// simulate a change. 
 	public void setMeasurements(float temperature, float humidity, float pressure) {
 		this.temperature = temperature;
 		this.humidity = humidity;
