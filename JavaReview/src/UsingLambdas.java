@@ -39,6 +39,15 @@ public class UsingLambdas {
 		
 		// Q1: sort the points by their distance from zero,
 		// using a comparator and a lambda
+		
+		// Q2: Create an array list of 5 strings, use a Comparator
+		// with lambda to sort them by their length.
+		// If two strings have the same length, they are considered 
+		// equal and their order is arbitrary.
+		
+		// Write an interface Measurable<T> that has a method "measure" 
+		// that takes an object of type T and returns its number - a measure.
+
 	}
 
 }
