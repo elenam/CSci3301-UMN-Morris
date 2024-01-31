@@ -11,6 +11,11 @@ public class WeatherStation {
 		ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 		//Observer needUmbrella = (......)-> {if ..... System.out.println("Bring an umbrella!");};
 		//weatherData.registerObserver(needUmbrella);
+		
+		// Create and register another observer that detects some other 
+		// condition (say, temperatures below freezing) and provides
+		// some advice to the user (like wearing a hat). 
+		// You may need to add more setMeasurements calls below. 
 
 		weatherData.setMeasurements(80, 65, 30.4f);
 		weatherData.setMeasurements(82, 70, 29.2f);

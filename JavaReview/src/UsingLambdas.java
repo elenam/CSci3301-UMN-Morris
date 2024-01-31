@@ -44,7 +44,9 @@ public class UsingLambdas {
 		// with lambda to sort them by their length.
 		// If two strings have the same length, they are considered 
 		// equal and their order is arbitrary.
-		
+		// Note that there is a shortcut for this that is mentioned in 
+		// some tutorials, but I am asking you to follow a slightly longer
+		// syntax above. 
 	}
 
 }
