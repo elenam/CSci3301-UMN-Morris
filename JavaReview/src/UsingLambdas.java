@@ -45,9 +45,6 @@ public class UsingLambdas {
 		// If two strings have the same length, they are considered 
 		// equal and their order is arbitrary.
 		
-		// Write an interface Measurable<T> that has a method "measure" 
-		// that takes an object of type T and returns its number - a measure.
-
 	}
 
 }
