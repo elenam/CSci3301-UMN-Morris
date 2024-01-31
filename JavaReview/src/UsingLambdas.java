@@ -39,6 +39,9 @@ public class UsingLambdas {
 		
 		// Q1: sort the points by their distance from zero,
 		// using a comparator and a lambda
+		// Note: distanceFromZero returns a double, and casting it to an int
+		// loses precision. Multiply it by something large, like 1000, 
+		// before casting to int.
 		
 		// Q2: Create an array list of 5 strings, use a Comparator
 		// with lambda to sort them by their length.

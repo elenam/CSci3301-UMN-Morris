@@ -12,10 +12,12 @@ public class WeatherStation {
 		// Q3: uncomment the two lines of code below and fill in the blanks.
 		// Note that you don't need to specify the types of parameters 
 		// for the update method (Java can infer those), but you need the names.
+		// When humidity is >= 90, bring the umbrella! 
 		//Observer needUmbrella = (......)-> {if ..... System.out.println("Bring an umbrella!");};
 		//weatherData.registerObserver(needUmbrella);
 		
-		// Q4: Create and register another observer that detects some other 
+		// Q4: 
+		// Create and register another observer that detects some other 
 		// condition (say, temperatures below freezing) and provides
 		// some advice to the user (like wearing a hat). 
 		// You may need to add more setMeasurements calls below. 
