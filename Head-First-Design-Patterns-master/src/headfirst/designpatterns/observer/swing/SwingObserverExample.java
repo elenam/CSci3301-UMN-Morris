@@ -1,6 +1,8 @@
 package headfirst.designpatterns.observer.swing;
 	
 import java.awt.*;
+import java.awt.event.ActionEvent;
+
 import javax.swing.*;
 	
 public class SwingObserverExample {
@@ -31,15 +33,28 @@ public class SwingObserverExample {
 			System.out.println("Come on, do it!")
 		);
 		
+		
+		
 		// Displaying the button
-		frame.getContentPane().add(BorderLayout.CENTER, button);
+		frame.getContentPane().add(BorderLayout.CENTER, button);		
+	
 
 		// Set frame properties 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(BorderLayout.CENTER, button);
 		frame.setSize(300,300);
 		frame.setVisible(true);
+
+		// This code shows how to set the button background:
+		// button.setBackground(Color.BLUE);
+		
+		// Then add a listener that, every time the button is pressed, changes
+		// the background to a random color out of three colors of your choice.
+		// Note that it's better to put the color choice in a separate static method 
+		// and just call that method in the lambda. 
 	}
+	
+
 	
 	/*
 	 * Remove these two inner classes to use lambda expressions instead.
