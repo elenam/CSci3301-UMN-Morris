@@ -1,6 +1,6 @@
 package headfirst.designpatterns.observer.weather;
 	
-public class CurrentConditionsDisplay implements Observer, DisplayElement {
+public class CurrentConditionsDisplay implements TempHumPressObserver, DisplayElement {
 	private float temperature;
 	private float humidity;
 	private WeatherData weatherData;

@@ -3,25 +3,25 @@ package headfirst.designpatterns.observer.weather;
 import java.util.*;
 
 public class WeatherData implements Subject {
-	private List<Observer> observers;
+	private List<TempHumPressObserver> observers;
 	private float temperature;
 	private float humidity;
 	private float pressure;
 	
 	public WeatherData() {
-		observers = new ArrayList<Observer>();
+		observers = new ArrayList<TempHumPressObserver>();
 	}
 	
-	public void registerObserver(Observer o) {
+	public void registerObserver(TempHumPressObserver o) {
 		observers.add(o);
 	}
 	
-	public void removeObserver(Observer o) {
+	public void removeObserver(TempHumPressObserver o) {
 		observers.remove(o);
 	}
 	
 	public void notifyObservers() {
-		for (Observer observer : observers) {
+		for (TempHumPressObserver observer : observers) {
 			observer.update(temperature, humidity, pressure);
 		}
 	}
@@ -40,16 +40,16 @@ public class WeatherData implements Subject {
 		measurementsChanged();
 	}
 
-	public float getTemperature() {
-		return temperature;
-	}
-	
-	public float getHumidity() {
-		return humidity;
-	}
-	
-	public float getPressure() {
-		return pressure;
-	}
+//	public float getTemperature() {
+//		return temperature;
+//	}
+//	
+//	public float getHumidity() {
+//		return humidity;
+//	}
+//	
+//	public float getPressure() {
+//		return pressure;
+//	}
 
 }

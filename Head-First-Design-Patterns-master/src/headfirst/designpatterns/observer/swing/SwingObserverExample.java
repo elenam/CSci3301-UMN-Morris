@@ -46,7 +46,7 @@ public class SwingObserverExample {
 		frame.setVisible(true);
 
 		// This code shows how to set the button background:
-		// button.setBackground(Color.BLUE);
+		//button.setBackground(Color.BLUE);
 		
 		// Then add a listener that, every time the button is pressed, changes
 		// the background to a random color out of three colors of your choice.

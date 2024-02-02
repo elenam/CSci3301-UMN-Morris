@@ -1,6 +1,6 @@
 package headfirst.designpatterns.observer.weather;
 
-public class StatisticsDisplay implements Observer, DisplayElement {
+public class StatisticsDisplay implements TempHumPressObserver, DisplayElement {
 	private float maxTemp = 0.0f;
 	private float minTemp = 200;
 	private float tempSum= 0.0f;
