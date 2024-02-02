@@ -4,14 +4,17 @@ import java.awt.*;
 import javax.swing.*;
 	
 public class SwingObserverExample {
-	JFrame frame;
+	static JFrame frame; // make the frame static to avoid creating an object
 	
 	public static void main(String[] args) {
-		SwingObserverExample example = new SwingObserverExample();
-		example.go();
+		example();
+		// Elena: There is absolutely no need to create an object 
+		// for the example; commenting out the code below:
+//		SwingObserverExample example = new SwingObserverExample();
+//		example.go();
 	}
 	
-	public void go() {
+	public static void example() {
 		frame = new JFrame();
 
 		JButton button = new JButton("Should I do it?");
@@ -27,6 +30,8 @@ public class SwingObserverExample {
 		button.addActionListener(event ->
 			System.out.println("Come on, do it!")
 		);
+		
+		// Displaying the button
 		frame.getContentPane().add(BorderLayout.CENTER, button);
 
 		// Set frame properties 
