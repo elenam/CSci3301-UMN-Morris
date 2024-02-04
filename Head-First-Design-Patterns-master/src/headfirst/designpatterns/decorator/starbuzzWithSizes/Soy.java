@@ -9,6 +9,9 @@ public class Soy extends CondimentDecorator {
 		return beverage.getDescription() + ", Soy";
 	}
 
+	// Rewrite this method using the adjustment.
+	// Be careful, make sure that you are only adjusting Soy
+	// contribution, not the entire cost. 
 	public double cost() {
 		double cost = beverage.cost();
 		if (beverage.getSize() == Size.TALL) {
