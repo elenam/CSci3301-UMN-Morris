@@ -28,9 +28,9 @@ public abstract class Beverage {
 	 * Size.VENTE adjustment is 2.0 
 	 */
 	protected double costAdjustmentBySize() {
-		if (getSize() == Size.TALL) {
+		if (this.getSize() == Size.TALL) {
 			return 1.0;
-		} else if (getSize() == Size.GRANDE) {
+		} else if (this.getSize() == Size.GRANDE) {
 			return 1.5;
 		} else { // Size.VENTI
 			return 2.0;
