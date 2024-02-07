@@ -3,10 +3,10 @@ package headfirst.designpatterns.factory.pizzas;
 import java.util.*;
 
 abstract public class Pizza {
-	String name;
-	String dough;
-	String sauce;
-	List<String> toppings = new ArrayList<String>();
+	protected String name;
+	protected String dough;
+	protected String sauce;
+	protected ArrayList<String> toppings = new ArrayList<String>();
 
 	public String getName() {
 		return name;
