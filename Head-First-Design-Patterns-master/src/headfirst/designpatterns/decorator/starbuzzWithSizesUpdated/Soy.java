@@ -1,6 +1,5 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 
-import headfirst.designpatterns.decorator.starbuzzWithSizes.Beverage.Size;
 
 public class Soy extends CondimentDecorator {
 	public Soy(Beverage beverage) {

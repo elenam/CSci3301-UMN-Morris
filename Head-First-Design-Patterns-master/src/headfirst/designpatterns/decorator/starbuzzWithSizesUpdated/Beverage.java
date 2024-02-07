@@ -1,9 +1,7 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 
-import headfirst.designpatterns.decorator.starbuzzWithSizesUpdated.Beverage.Size;
-
 public abstract class Beverage {
-	public enum Size { TALL, GRANDE, VENTI };
+	public static enum Size { TALL, GRANDE, VENTI };
 	protected Size size = Size.TALL;
 	protected String description = "Unknown Beverage";
   

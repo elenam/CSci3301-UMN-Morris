@@ -2,7 +2,7 @@ package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 
 
 public abstract class CondimentDecorator extends Beverage {
-	public Beverage beverage;
+	protected Beverage beverage;
 	public abstract String getDescription();
 	
 	public Size getSize() {

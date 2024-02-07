@@ -1,7 +1,5 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 
-import headfirst.designpatterns.decorator.starbuzzWithSizesUpdated.Beverage.Size;
-
 public class StarbuzzCoffee {
  
 	public static void main(String args[]) {
@@ -17,7 +15,7 @@ public class StarbuzzCoffee {
 				+ " $" + String.format("%.2f", beverage2.cost()));
  
 		Beverage beverage3 = new HouseBlend();
-		beverage3.setSize(Size.VENTI);
+		beverage3.setSize(Beverage.Size.VENTI);
 		beverage3 = new Soy(beverage3);
 		beverage3 = new Mocha(beverage3);
 		beverage3 = new Whip(beverage3);
