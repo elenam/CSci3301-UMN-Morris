@@ -1,7 +1,7 @@
 package headfirst.designpatterns.factory.pizzas;
 
 public class PizzaStore {
-	SimplePizzaFactory factory;
+	protected SimplePizzaFactory factory;
  
 	public PizzaStore(SimplePizzaFactory factory) { 
 		this.factory = factory;
