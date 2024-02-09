@@ -1,6 +1,7 @@
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.OutputStream;
 
 public class Encryption {
 	/*
@@ -14,9 +15,11 @@ public class Encryption {
 		String outFile = "encrypted.txt";
 		OutputStreamWriter out = null;
 		try {
-			out = (new OutputStreamWriter(
-					//TODO: add EncryptionOutputStream to decorate the FileOutputStream
-						(new FileOutputStream(outFile)), "UTF-8"));
+			OutputStream out1 = new FileOutputStream(outFile);
+			//TODO: add EncryptionOutputStream to decorate the FileOutputStream
+			// before passing it to the OutputStreamWriter:
+			// out1 = .....
+			out = new OutputStreamWriter(out1, "UTF-8");
 			out.write(s); // write to the file
 		} catch (IOException e) {
 			e.printStackTrace();
