@@ -7,7 +7,8 @@ public abstract class Game {
 	protected int minPlayers = 0; // how many players at least
 	
 	// The method returns all players' hands after the first deal
-	public abstract ArrayList<ArrayList<Card>> deal();
+	// n is the number of players
+	public abstract ArrayList<ArrayList<Card>> deal(int n);
 	
 	// The method shuffles the cards inside the game 
 	public void shuffle() {
