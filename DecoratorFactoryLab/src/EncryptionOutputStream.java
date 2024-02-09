@@ -21,7 +21,7 @@ public class EncryptionOutputStream extends FilterOutputStream {
 	 */
 	int encrypt(int c) {
 		int a = 'a'; // ASCII code of lower-case 'a'
-		int z = 'a' + 26; // ASCII code of lower-case 'z'
+		int z = 'a' + 25; // ASCII code of lower-case 'z'
 		
 		// if the character is a lower-case letter:
 		if (a <= c && c <= z) {
