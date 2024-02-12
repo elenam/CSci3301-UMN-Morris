@@ -16,6 +16,7 @@ public abstract class Game {
 	}
 		
 	public void printDeck() {
+		System.out.println("The deck has " + deck.size() + " cards:");
 		for(Card card: deck) {
 			System.out.println(card);
 		}
