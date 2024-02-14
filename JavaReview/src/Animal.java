@@ -5,7 +5,13 @@ public class Animal {
 	
 	public Animal(String name, double weight) {
 		this.name = name;
-		this.weight = weight;
+		if (validWeight(weight)) {
+			this.weight = weight;
+		}
+	}
+	
+	private boolean validWeight(double weight) {
+		return (weight > 0);
 	}
 	
 	public String getName() {

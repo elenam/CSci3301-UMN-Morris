@@ -32,7 +32,7 @@ public class ReflectionExamples {
 		
 		// get all methods in the class, not superclasses (including private)
 		Method [] methods = class1.getDeclaredMethods();
-		System.out.println("There are " + methods.length + " methods");	
+		System.out.println("There are " + methods.length + " methods in the class itself:");	
 		
 		for (Method m: methods) {
 			System.out.println(m);
@@ -40,7 +40,7 @@ public class ReflectionExamples {
 		System.out.println();
 		
 		Method [] allPubMethods = class1.getMethods();
-		System.out.println("There are " + allPubMethods.length + " methods");	
+		System.out.println("There are " + allPubMethods.length + " visible methods, including inherited:");	
 		
 		for (Method m: allPubMethods) {
 			System.out.println(m);
