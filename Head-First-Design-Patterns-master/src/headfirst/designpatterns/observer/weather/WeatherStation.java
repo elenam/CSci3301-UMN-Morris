@@ -1,3 +1,4 @@
+
 package headfirst.designpatterns.observer.weather;
 
 public class WeatherStation {
