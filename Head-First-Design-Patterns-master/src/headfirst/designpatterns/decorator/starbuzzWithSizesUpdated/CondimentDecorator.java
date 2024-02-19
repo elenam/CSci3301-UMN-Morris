@@ -1,6 +1,6 @@
 package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 
-import headfirst.designpatterns.decorator.starbuzzWithSizesUpdated.Beverage.Size;
+
 
 public abstract class CondimentDecorator extends Beverage {
 	protected Beverage beverage;
