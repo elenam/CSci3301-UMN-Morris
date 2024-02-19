@@ -3,6 +3,7 @@ package headfirst.designpatterns.decorator.starbuzzWithSizesUpdated;
 public class Mocha extends CondimentDecorator {
 	public Mocha(Beverage beverage) {
 		this.beverage = beverage;
+		this.size = beverage.size; 
 	}
  
 	public String getDescription() {
@@ -10,6 +11,6 @@ public class Mocha extends CondimentDecorator {
 	}
  
 	public double cost() {
-		return beverage.cost() + .20;
+		return beverage.cost() + .20 * this.costAdjustmentBySize();
 	}
 }
