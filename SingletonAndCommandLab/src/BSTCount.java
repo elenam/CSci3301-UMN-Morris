@@ -49,6 +49,9 @@ public class BSTCount {
 	 */
 	private void inOrderRec(BSTNode node, BiPredicate<String,Integer> selector) {
 		// Fill in the code according to the description
+		// Hint: use selector.test(...) to call the selector function. 
+		// It returns a boolean (according to the BiPredicate interface) 
+		// which determines whether the data in the node should be printed or not. 
 	}
 	
 
