@@ -20,9 +20,9 @@ public class TestBST {
 
 		}
 		
-		System.out.println("Winnie: " + wordCounts.getCount("Winnie"));
-		System.out.println("Winnie-the-Pooh: " + wordCounts.getCount("Winnie-the-Pooh"));
-		System.out.println("WinniethePooh: " + wordCounts.getCount("WinniethePooh"));
+//		System.out.println("Winnie: " + wordCounts.getCount("Winnie"));
+//		System.out.println("Winnie-the-Pooh: " + wordCounts.getCount("Winnie-the-Pooh"));
+//		System.out.println("WinniethePooh: " + wordCounts.getCount("WinniethePooh"));
 		
 		//wordCounts.inOrder((s,n)-> true); // print all words and counts
 		//wordCounts.inOrder((s,n)-> (n >= 5)); // print only nodes with counts >= 5
