@@ -35,10 +35,22 @@ public class BSTCount {
 		}
 	}
 	
+	/*
+	 * The method starts recursion on the root of the tree to 
+	 * get the count for a word. 
+	 * If the word doesn't occur in the tree, 0 is returned.
+	 */
 	public int getCount(String word) {
 		return root.getCount(word);
 	}
 	
+	/*
+	 * The method prints nodes whose word and count satisfy the 
+	 * condition in the selector, i.e. for which selector.test(word, count)
+	 * returns true. 
+	 * The method starts the recursive process by calling the inOrderRec 
+	 * and passing the root to it. 
+	 */
 	public void inOrder(BiPredicate<String,Integer> selector) {
 		inOrderRec(root, selector);
 	}
