@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 public class TestBST {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		BSTCount letterCounts = new BSTCount();
+		BSTCount wordCounts = new BSTCount();
 		
 		/*
 		 * Reading data from a file word-by-word by specifying spaces as a delimiter
@@ -20,17 +20,27 @@ public class TestBST {
 
 		}
 		
-		System.out.println("Winnie: " + letterCounts.getCount("Winnie"));
-		System.out.println("Winnie-the-Pooh: " + letterCounts.getCount("Winnie-the-Pooh"));
-		System.out.println("WinniethePooh: " + letterCounts.getCount("WinniethePooh"));
+		System.out.println("Winnie: " + wordCounts.getCount("Winnie"));
+		System.out.println("Winnie-the-Pooh: " + wordCounts.getCount("Winnie-the-Pooh"));
+		System.out.println("WinniethePooh: " + wordCounts.getCount("WinniethePooh"));
 		
-		//letterCounts.inOrder((s,n)-> true); // print all words and counts
-		//letterCounts.inOrder((s,n)-> (n >= 5)); // print only nodes with counts >= 5
+		//wordCounts.inOrder((s,n)-> true); // print all words and counts
+		//wordCounts.inOrder((s,n)-> (n >= 5)); // print only nodes with counts >= 5
 		// Add: print nodes with the words longer than 5 letters
 		// Add another call to inOrder using "and", "or", or "negate"
 		
 		
-		// Add 
+		// Add a method "compute" to BSTCount. The method also performs an in-order traversal
+		// recursively. 
+		// It takes a lambda function that takes two parameters (a string and an integer)
+		// and returns an int.
+		// The function implements the following interface:
+		// https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/function/ToIntBiFunction.html
+		
+		// After you implement the traversal function, use it to:
+		// 1. Find the sum of all counts of words. 
+		// 2. Find the sum of the lengths of all words.
+		// 3. Find the longest word
 		
 	}
 
