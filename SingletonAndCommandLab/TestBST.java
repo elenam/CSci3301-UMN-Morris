@@ -40,7 +40,6 @@ public class TestBST {
 		// After you implement the traversal function, use it to:
 		// 1. Find the sum of all counts of words. 
 		// 2. Find the sum of the lengths of all words.
-		// 3. Find the longest word
 		
 	}
 
